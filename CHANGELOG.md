@@ -19,7 +19,7 @@ For deprecation, rollouts and patch timelines by region, please check the [AKS-R
 
 ### Preview Features
 * [Cilium Gateway API](https://cilium.io/use-cases/gateway-api/) is now available in preview for clusters running Kubernetes 1.32 or later with Azure CNI Powered by Cilium v1.17 or later.
-* Added support for AKS-managed [StandardV2 NAT Gateway](https://learn.microsoft.com/azure/aks/nat-gateway) outbound in supported public Azure regions, with automatic exclusion in sovereign clouds and regions where StandardV2 NAT Gateway isn't yet available. To deploy, use `managedNATGatewayV2` on setting `outboundType`.
+* Added support for AKS-managed [StandardV2 NAT Gateway](https://learn.microsoft.com/azure/aks/nat-gateway) outbound in supported public Azure regions, with automatic exclusion in sovereign clouds and regions where StandardV2 NAT Gateway isn't yet available. StandardV2 NAT Gateway is zone-redundant by default and provides IPv6 support, higher throughput, and flow log capabilities.
 
 ### Features
 * Customers using `Standard_NC80ads_H100_v5` VM sizes can now configure [MIG (multi-instance GPU) profiles](https://learn.microsoft.com/azure/aks/gpu-cluster) on their agent pools, enabling partitioning of H100 GPUs into smaller instances (MIG1g, MIG2g, MIG3g, MIG4g, MIG7g) for better GPU utilization and multi-tenancy scenarios.
